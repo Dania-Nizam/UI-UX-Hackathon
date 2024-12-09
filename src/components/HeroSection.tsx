@@ -1,4 +1,5 @@
 import React from "react";
+import PickupDropoffSection from "./PickupDropoffSection";
 
 const HeroSection = () => {
   const heroData = [
@@ -16,57 +17,10 @@ const HeroSection = () => {
     },
   ];
 
-  const PickupDropoffSection = () => {
-    return (
-      <div className="flex flex-col lg:flex-row justify-between items-center bg-white p-6 rounded-lg shadow-md mt-6">
-        <div className="flex-1 flex flex-col space-y-4">
-          <h3 className="text-lg font-semibold">Pick-Up</h3>
-          <div className="flex space-x-4">
-            <select className="border border-gray-300 rounded px-4 py-2 w-1/3">
-            <h1>Location</h1>
-              <option>Select your city</option>
-            </select>
-            <h1>Date</h1>
-            <input
-              type="date"
-              className="border border-gray-300 rounded px-4 py-2 w-1/3"
-            />
-
-            
-            <input
-              type="time"
-              className="border border-gray-300 rounded px-4 py-2 w-1/3"
-            />
-          </div>
-        </div>
-        <div className="flex justify-center my-4 lg:my-0">
-          <button className="bg-blue-500 text-white rounded-full p-3 hover:bg-blue-600">
-            <i className="transform rotate-90">↔️</i>
-          </button>
-        </div>
-        <div className="flex-1 flex flex-col space-y-4">
-          <h3 className="text-lg font-semibold">Drop-Off</h3>
-          <div className="flex space-x-4">
-            <select className="border border-gray-300 rounded px-4 py-2 w-1/3">
-              <option>Select your city</option>
-            </select>
-            <h1>LOcation</h1>
-            <input
-              type="date"
-              className="border border-gray-300 rounded px-4 py-2 w-1/3"
-            />
-            <input
-              type="time"
-              className="border border-gray-300 rounded px-4 py-2 w-1/3"
-            />
-          </div>
-        </div>
-      </div>
-    );
-  };
+ 
 
   return (
-    <>
+    <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 bg-blue-100">
         {heroData.map((item, index) => (
           <div
@@ -87,7 +41,7 @@ const HeroSection = () => {
         ))}
       </div>
       <PickupDropoffSection />
-    </>
+      </div>
   );
 };
 
