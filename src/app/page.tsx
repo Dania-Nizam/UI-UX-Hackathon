@@ -1,10 +1,17 @@
-import { CiStar } from "react-icons/ci";
+import CarRental from "@/components/CarRental";
+
+import HeroSection from "@/components/HeroSection";
+import Recomendation from "@/components/Recomendation";
+
 
 
 export default function Home() {
   return (
-    <div>hello
-      <CiStar />
-    </div>
+   <div >
+    <HeroSection/>
+    <CarRental/>
+    <Recomendation/>
+  
+   </div>
   );
 }
