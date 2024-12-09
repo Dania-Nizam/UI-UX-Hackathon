@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Recent from "./Recent";
+
 
 
 
@@ -322,7 +322,7 @@ const Detail = () => {
 
             </div>
 
-            <Recent/>
+            
           </div>
         </div>
       </section>
